@@ -1,1 +1,6 @@
-ProyectoGrupo8_CaC/
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+*.pub
+quit
