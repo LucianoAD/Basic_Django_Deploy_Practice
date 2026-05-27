@@ -1,80 +1,122 @@
-<h1 align="center"> TPO Backend Grupo 8 <br>Programa Codo a codo </h1>
+<h1 align="center">Django REST Product API</h1>
 
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-FINALIZADO-green) ![Badge en Desarollo](https://img.shields.io/badge/LICENSE-MIT-green)
+<p align="center">
+RESTful backend application built with Django and Django REST Framework
+</p>
 
-## :book:Descripción
-Este backend sirve como base para una aplicación de ventas,  fue desarrollada con Django y desplegada en PythonAnywhere. 
+![Status](https://img.shields.io/badge/STATUS-FINALIZADO-success)
+![License](https://img.shields.io/badge/LICENSE-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Django](https://img.shields.io/badge/Django-Framework-darkgreen)
+![API](https://img.shields.io/badge/API-REST-orange)
 
-## :hammer: Estructura
+---
+
+## 📖 Overview
+
+Backend application developed with Django and Django REST Framework for product management and CRUD operations.
+
+The project demonstrates practical backend development concepts including:
+
+- REST API development
+- CRUD operations
+- JSON serialization
+- Database integration
+- Endpoint routing
+- Server-side rendering
+- Deployment configuration
+
+---
+
+## 🛠 Technologies
+
+- Python
+- Django
+- Django REST Framework
+- SQLite
+- HTML/CSS
+- JSON
+- PythonAnywhere
+
+---
+
+## 🚀 Main Features
+
+- Product creation, update and deletion
+- REST endpoints for data management
+- GET, POST, PUT and DELETE operations
+- Automatic JSON serialization
+- Template rendering with Django
+- Database integration
+
+---
+
+## 📂 Project Structure
 
 ```plaintext
-pizzeria_django_deploy
-├── README.md
-├── andersonpizza
-│   ├── ...
-├── app_pizzas
-│   ├── ...
-├── db.sqlite3
-├── manage.py
-├── quit
-├── quit.pub
+project/
+├── andersonpizza/      # Project configuration
+├── app_pizzas/         # Business logic and API
+│   ├── models.py
+│   ├── serializers.py
+│   ├── viewsets.py
+│   └── urls.py
+├── static/
+├── templates/
 ├── requirements.txt
-├── static
-│   ├── ...
-└── templates
-    ├── base.html
-    └── landing_page.html
+└── manage.py
 ```
-## 🧱 Componentes
-1. andersonpizza
 
-    Este directorio contiene las configuraciones y ajustes del proyecto Django.
+---
 
-2. app_pizzas
+## ⚙ Installation
 
-    Este directorio encapsula la aplicación de ventas del producto, manejando modelos, vistas, serializadores y puntos finales de la API.
-    La carpeta templates incluye plantillas HTML para vistas relacionadas con los productos.
+Clone repository:
 
-3. db.sqlite3
+```bash
+git clone <repository-url>
+```
 
-    Archivo de base de datos SQLite donde se almacenan los datos de la aplicación.
+Install dependencies:
 
-4. manage.py
+```bash
+pip install -r requirements.txt
+```
 
-    Script de gestión de Django para varios comandos, migraciones y tareas administrativas.
+Apply migrations:
 
-5. static
+```bash
+python manage.py migrate
+```
 
-    Archivos estáticos, incluyendo CSS, JavaScript, imágenes y otros recursos.
+Run development server:
 
-6. templates
+```bash
+python manage.py runserver
+```
 
-    Plantillas HTML para la representación de vistas en el frontend.
+---
 
-## :rocket:Funcionalidades
+## 🌐 API Endpoints
 
-- Modelos y vistas para crear, actualizar y eliminar productos.
-- Puntos finales de la API para interactuar con los datos de los productos.
-- Implementación del protocolo HTTP y los métodos GET, POST, PUT y DELETE.
-- Utilización del formato JSON para enviar y recibir datos desde la base de datos.
-   
-## :wrench: Configuración y despliegue
+**Live Demo**
 
-- Clonar el repositorio.
-- Instalar dependencias con pip install -r requirements.txt.
-- Migrar la base de datos con python manage.py migrate.
-- Ejecutar el servidor de desarrollo con python manage.py runserver.
+- Home: `http://luad.pythonanywhere.com/`
+- Products API: `http://luad.pythonanywhere.com/pizzas/`
 
-## ✔ Puntos finales de la API
+---
 
-- API de Pizzas: http://luad.pythonanywhere.com/
-- CRUD: http://luad.pythonanywhere.com/pizzas/
+## 🔗 Related Project
 
-See more about frontend development here: https://github.com/LucianoAD/ProyectoGrupo8_CaC
+Frontend repository:
 
-## 🧑‍🤝‍🧑🧑‍🤝‍🧑 Integrantes:
+`https://github.com/LucianoAD/Interactive-Web-App-with-API-Integration`
+
+---
+
+## 👥 Team
 
 - Luciano Anselmino
 - Yanina Tiribelli
-- Miguel Angel Estrada Rivera 
+- Miguel Angel Estrada Rivera
 - Franco Bernedo
